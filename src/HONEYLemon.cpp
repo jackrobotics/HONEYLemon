@@ -381,5 +381,12 @@ String HONEYLemon::getVersion(){
     return "HONEYLemon library Version "+String(Version);
 }
 
+String HONEYLemon::getChipId(){
+    char chipIdChar[13];
+    uint64_t chipId = ESP.getEfuseMac();
+    snprintf(chipIdChar, 13, "%04X%08X", (uint16_t)(chipId >> 32), (uint32_t)chipId);
+    return String(chipIdChar);
+}
+
 HONEYLemon lemon;
 #endif

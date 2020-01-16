@@ -13,6 +13,7 @@
 #include "lib/FastLED/FastLED.h"
 #include "lib/TridentTD_EasyButton/TridentTD_EasyButton.h"
 #include "lib/Modbus/ModbusRTU.h"
+#include "lib/ESP32Servo/ESP32Servo.h"
 
 #if defined(ESP32)
     #include <WiFi.h>
@@ -119,6 +120,7 @@ class HONEYLemon
         /* Task Loop */
         void Task_Loop();
         String getVersion();
+        String getChipId();
 };
 
 extern HONEYLemon lemon;
