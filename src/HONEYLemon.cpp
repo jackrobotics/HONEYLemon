@@ -19,7 +19,8 @@ void HONEYLemon::begin(){
 
     this->buzzer_setup();
     LED.addLeds<NEOPIXEL, PIN_LED>(_leds, 6);
-
+    this->setColorLED(0,0,0,0);
+    
     if(!SD.begin(PIN_SDCARD)){
         this->modeMicroSDCard=false;
         DEBUG_PRINTLN("Micro SD Card Mount Failed");
