@@ -108,21 +108,21 @@ void HONEYLemon::onDoubleClick(voidCb_t cb) {
 /* LED RGB Function */
 void HONEYLemon::setColorLED(uint8_t i,uint8_t r,uint8_t g,uint8_t b){
 
-    if(r<=0)r=0; else if(r>100)r=100;
-    if(g<=0)g=0; else if(g>100)g=100;
-    if(b<=0)b=0; else if(b>100)b=100;
+    if(r<=0)r=0; else if(r>255)r=255;
+    if(g<=0)g=0; else if(g>255)g=255;
+    if(b<=0)b=0; else if(b>255)b=255;
     if(i<=0){
         for(uint8_t i=0;i<6;i++)
-            _leds[i]=CRGB((uint8_t)r*2.55,(uint8_t)g*2.55,(uint8_t)b*2.55); // ALL LED
+            _leds[i]=CRGB(r,g,b); // ALL LED
     }else{
-        _leds[i-1]=CRGB((uint8_t)r*2.55,(uint8_t)g*2.55,(uint8_t)b*2.55); // LED 1 - 6
+        _leds[i-1]=CRGB(r,g,b); // LED 1 - 6
     }
     LED.show();
 }
 void HONEYLemon::setBrightnessLED(uint8_t lv){
     if(lv <= 0) lv = 0;
-    else if(lv > 100)lv = 100;
-    LED.setBrightness(uint8_t(lv*2.5));
+    else if(lv > 255)lv = 255;
+    LED.setBrightness(lv);
 }
 
 /* Buzzer / Sound Function */
