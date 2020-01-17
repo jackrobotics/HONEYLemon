@@ -1,5 +1,5 @@
 /*
-    Basic : การเขียนโปรแกรมอ่านค่า Sensor Temp & Humi (PR-3008-WS-N01) ผ่าน Modbus Protocol บนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
+    Advanced : การเขียนโปรแกรมอ่านค่า Sensor Temp & Humi (PR-3008-WS-N01) ผ่าน Modbus Protocol บนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
 */
 #include <HONEYLemon.h>
 
