@@ -1,6 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมเพื่อดู debug บนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
-    Website : https://lemon.honey.co.th/basic-001-debug-%e0%b8%94%e0%b8%b5%e0%b8%9a%e0%b8%b1%e0%b8%81/
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-001-debug-%e0%b8%94%e0%b8%b5%e0%b8%9a%e0%b8%b1%e0%b8%81/
 */
 #include <HONEYLemon.h>
 
