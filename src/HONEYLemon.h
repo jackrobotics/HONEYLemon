@@ -91,10 +91,9 @@ class HONEYLemon
         void setBrightnessLED(uint8_t);
         
         /* Buzzer / Sound Function */
-        void buzzer_setup();
         void sound(unsigned long,unsigned long duration=0);
         void tone(unsigned long freq,unsigned long duration=0){sound(freq,duration);}
-        void noTone(){sound(0);}
+        void noTone(){ledcDetachPin(PIN_BUZZER);ledcWrite(0, 0);}
 
         /* Micro SD Card */
         bool createFile(String filename);

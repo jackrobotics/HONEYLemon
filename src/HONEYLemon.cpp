@@ -17,7 +17,6 @@ HONEYLemon::HONEYLemon(){
 void HONEYLemon::begin(){
     RS485.begin(9600, SERIAL_8N1, 16, 17);
 
-    this->buzzer_setup();
     LED.addLeds<NEOPIXEL, PIN_LED>(_leds, 6);
     this->setColorLED(0,0,0,0);
     
@@ -127,23 +126,12 @@ void HONEYLemon::setBrightnessLED(uint8_t lv){
 
 /* Buzzer / Sound Function */
 void HONEYLemon::sound(unsigned long freq,unsigned long duration){
+    ledcAttachPin(PIN_BUZZER, 0);
     ledcWriteTone(0, freq);
     if(duration != 0){
         delay(duration);
-        ledcWriteTone(0,0);
+        this->noTone();
     }
-}
-void HONEYLemon::buzzer_setup(){
-    int freq = 2000;
-    ledcSetup(0, freq, 8);
-    ledcAttachPin(PIN_BUZZER, 0);
-    
-    ledcWrite(0, 125);
-    /*for (int freq = 255; freq < 5000; freq = freq + 250){
-        ledcWriteTone(0, freq);
-        delay(50);
-    }*/
-    ledcWriteTone(0, 0);
 }
 
 /* Micro SD Card */
