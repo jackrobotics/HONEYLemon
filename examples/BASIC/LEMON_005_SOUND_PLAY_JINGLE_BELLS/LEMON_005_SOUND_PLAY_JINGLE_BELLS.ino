@@ -1,5 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมกับการใช้งานเสียงดนตรีเพลง Jingle bells บนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-005-sound-play-jingle-bells-เล่นเพลง/
 */
 #include <HONEYLemon.h>
 

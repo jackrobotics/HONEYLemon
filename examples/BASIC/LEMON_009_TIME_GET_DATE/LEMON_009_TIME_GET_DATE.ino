@@ -1,5 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมกับอ่านค่าวันเวลาจากอินเตอร์เน็ตบนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-009-time-get-date-วัน/
 */
 #include <HONEYLemon.h>
 
