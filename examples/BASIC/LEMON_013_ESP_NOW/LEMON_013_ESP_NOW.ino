@@ -6,6 +6,7 @@
 
 // ฟังก์ชั่นสำหรับการรับข้อมูลสำหรับ ESP-NOW
 void espnowRecv(const uint8_t *mac_addr, const uint8_t *data, int data_len) {
+    Serial.print("["+lemon.espnow_mac2str(mac_addr)+"]:");
     Serial.write(data, data_len);
     Serial.println();
 }

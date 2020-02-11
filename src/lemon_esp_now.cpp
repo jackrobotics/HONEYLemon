@@ -57,4 +57,10 @@ bool HONEYLemon::espnow_send(char *mac, char *str)
 };
 
 bool HONEYLemon::espnow_send(String mac, String str) { return espnow_send((char *)mac.c_str(), (char *)str.c_str()); };
+
+String HONEYLemon::espnow_mac2str(uint8_t* mac_addr){
+	char macStr[18];
+	snprintf(macStr, sizeof(macStr), "%02X:%02X:%02X:%02X:%02X:%02X", mac_addr[0], mac_addr[1], mac_addr[2], mac_addr[3], mac_addr[4], mac_addr[5]);
+	return (String)macStr;
+}
 #endif

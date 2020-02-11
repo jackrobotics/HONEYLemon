@@ -133,6 +133,7 @@ class HONEYLemon
         bool espnow_send(String,String);
         bool espnow_broadcast(char *);
         bool espnow_broadcast(String);
+        String espnow_mac2str(uint8_t *);
 
         /* Task Loop */
         void Task_Loop();
