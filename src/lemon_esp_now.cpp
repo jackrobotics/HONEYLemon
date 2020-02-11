@@ -46,6 +46,11 @@ bool HONEYLemon::espnow_send(char *mac, char *str)
 		ESP_ERROR_CHECK(esp_now_add_peer(&this->esp_now_slave));
 	}
 
+	if(strlen(str)>250){
+		DEBUG_PRINTLN("ESPNow Error max 250 characters");
+		return false;
+	}
+
 	esp_err_t result = esp_now_send(_mac, (uint8_t *)str, strlen(str));
 	if (result == ESP_OK){
 		DEBUG_PRINTLN("ESPNow->Send OK");
