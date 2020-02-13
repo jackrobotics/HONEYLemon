@@ -15,14 +15,12 @@
 #include "lib/Modbus/ModbusRTU.h"
 #include "lib/ESP32Servo/ESP32Servo.h"
 
-#if defined(ESP32)
-    #include <WiFi.h>
-    #include <WiFiMulti.h>
-    #include <HTTPClient.h>
-    #include <WiFiClientSecure.h>
-    #include <Update.h>
-    #include <esp_now.h>
-#endif
+#include <WiFi.h>
+#include <WiFiMulti.h>
+#include <HTTPClient.h>
+#include <WiFiClientSecure.h>
+#include <Update.h>
+#include <esp_now.h>
 
 #define PIN_USERBTN 0
 #define PIN_LED 2
