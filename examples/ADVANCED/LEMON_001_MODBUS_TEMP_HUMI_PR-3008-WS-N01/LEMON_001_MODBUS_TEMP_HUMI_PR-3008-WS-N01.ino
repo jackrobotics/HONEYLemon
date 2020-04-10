@@ -20,8 +20,8 @@ void loop()
     if( millis()-lastUpdate > 1000 ){   // ทำงานทุกๆ 1000 มิลลิวินาที ( 1 วินาที )
         lastUpdate = millis();          // Update เวลาล่าสุดเก็บไว้ใน lastUpdate
 
-        float humi = lemon.readHregModbusRTU(22,0)/10.0;   // อ่านค่าจาก id: 22, address: 0 เก็บไว้ในตัวแปร humi
-        float temp = lemon.readHregModbusRTU(22,1)/10.0;   // อ่านค่าจาก id: 22, address: 1 เก็บไว้ในตัวแปร temp
+        float humi = lemon.readHregModbusRTU(1,0)/10.0;   // อ่านค่าจาก id: 1, address: 0 เก็บไว้ในตัวแปร humi
+        float temp = lemon.readHregModbusRTU(1,1)/10.0;   // อ่านค่าจาก id: 1, address: 1 เก็บไว้ในตัวแปร temp
 
         Serial.println("Temp: "+String(temp)+" ,Humi: "+String(humi));  // แสดงผลผ่านหน้าจอมอนิเตอร์
     }
