@@ -124,6 +124,8 @@ class HONEYLemon
         bool readCoilModbusRTU(uint16_t id,uint16_t addr);
         bool writeHregModbusRTU(uint16_t id,uint16_t addr, uint16_t value);
         bool writeCoilModbusRTU(uint16_t id,uint16_t addr, bool value);
+        float convertIEEE754(uint32_t);
+        float convertIEEE754(uint32_t,uint32_t);
 
         /* File : lemon_esp_now.cpp */
         void setupESPNOW();

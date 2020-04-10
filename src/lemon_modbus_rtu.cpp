@@ -73,4 +73,13 @@ bool HONEYLemon::writeCoilModbusRTU(uint16_t id,uint16_t addr, bool value){
     return tmp;
 }
 
+float HONEYLemon::convertIEEE754(uint32_t a,uint32_t b){
+    uint32_t x = (a<<16)|b;
+    float y = *(float*)&x;
+    return y;
+}
+float HONEYLemon::convertIEEE754(uint32_t x){
+    float y = *(float*)&x;
+    return y;
+}
 #endif
