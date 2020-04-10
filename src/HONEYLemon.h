@@ -29,7 +29,7 @@
 
 #define RS485 Serial2
 
-#define Version "0.1.2"
+#define Version "0.1.3"
 
 typedef void (*voidCb_t)(void);
 
