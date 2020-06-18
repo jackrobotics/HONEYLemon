@@ -1,6 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมกับการใช้งานไมโครเอสดีการ์ดบนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
-    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-006-micro-sd-card/
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/blogs/basic/basic-006-micro-sd-card
 */
 #include <HONEYLemon.h>
 
