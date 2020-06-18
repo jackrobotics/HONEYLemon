@@ -1,6 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมกับการแจ้งเตือนผ่าน Line Notify บนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
-    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-011-line-notify-แจ้งเตือนผ่านไลน์/
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/blogs/basic/basic-011-line-notify
 */
 #include <HONEYLemon.h>
 
