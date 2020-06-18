@@ -1,6 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมกับการใช้งานเสียงดนตรีบนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
-    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-004-sound-tone-buzzer-เสียงดนตรี/
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/blogs/basic/basic-004-sound-tone-buzzer
 */
 #include <HONEYLemon.h>
 
