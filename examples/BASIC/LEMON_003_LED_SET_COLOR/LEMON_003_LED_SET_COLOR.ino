@@ -1,6 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมกับการใช้งานไฟ LED RGB บนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
-    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-003-set-led-color-rgb-เปลี่ยนสีไฟ-rgb-led/
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/blogs/basic/basic-003-set-led-color-rgb-rgb-led
 */
 #include <HONEYLemon.h>
 
