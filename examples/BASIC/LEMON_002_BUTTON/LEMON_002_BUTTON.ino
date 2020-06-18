@@ -1,6 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมกับการใช้งานปุ่มกดบนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
-    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-002-button-ปุ่มกด/
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/blogs/basic/basic-002-button
 */
 #include <HONEYLemon.h>
 
