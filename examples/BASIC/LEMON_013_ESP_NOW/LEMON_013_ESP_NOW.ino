@@ -1,6 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมสื่อสารไร้สายด้วย ESP-NOW
-    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-013-esp-now/
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/blogs/basic/basic-013-esp-now
 */
 #include <HONEYLemon.h>
 
