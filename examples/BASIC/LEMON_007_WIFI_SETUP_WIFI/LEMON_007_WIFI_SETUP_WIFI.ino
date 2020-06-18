@@ -1,6 +1,6 @@
 /*
     Basic : การเขียนโปรแกรมกับการเชื่อมต่ออินเตอร์เน็ตผ่าน WiFi บนบอร์ดไมโครคอนโทรลเลอร์ HONEYLemon
-    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/basic-007-wifi-setup-wifi-ต่อเน็ต/
+    อ่านข้อมูลเพิ่มเติม : https://lemon.honey.co.th/blogs/basic/basic-007-wifi-setup-wifi
 */
 #include <HONEYLemon.h>
 
